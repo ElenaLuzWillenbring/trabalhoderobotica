@@ -1,0 +1,28 @@
+#define pinLEDVerde 2
+#define pinLEDAmarelo ~3
+#define pinLEDVermelho 4
+
+
+void setup ()  {
+pinMode (pinLEDVerde, OUTPUT);//Declaramos o pino 2 do microcontrolador como saída
+pinMode (pinLEDAmarelo, OUTPUT);//Declaramos o pino ~3 do microcontrolador como saída
+pinMode (pinLEDVermelho, OUTPUT);//Declaramos o pino 4 do microcontrolador como saída
+
+}
+
+void loop ()  {
+digitalWrite (pinLEDVerde, HIGH);
+digitalWrite (pinLEDAmarelo, LOW);
+digitalWrite (pinLEDVermelho, LOW);
+delay(2000);
+
+digitalWrite (pinLEDVerde, LOW);
+digitalWrite (pinLEDAmarelo, HIGH);
+digitalWrite (pinLEDVermelho, LOW);
+delay(500);
+
+digitalWrite (pinLEDVerde, LOW);
+digitalWrite (pinLEDAmarelo, LOW);
+digitalWrite (pinLEDVermelho, HIGH);
+delay(2000);
+}
